@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Spectral:200,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+.navbar-brand{
+  font-family:'Great Vibes', cursive;
+  font-size:30px;
+}
+body{
+  font-size: 16px;
+  font-family: 'Spectral', serif;
+  position:relative;
+}
+main{
+  position:relative;
+}
+section#home {
+    margin: 69px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(https://s10.postimg.org/5fk7i4oh5/marc-mueller-210523.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+p#text-overley{
+  font-size: 25px;
+}
+section:not(#parallax){
+  margin:50px 0;
+}
+.img-about{
+  margin-bottom:40px;
+  width:25%;
+  transition: 1s;
+}
+.img-about:hover{
+  transform: scale(1.05);
+}
+#portfolio p{
+  text-align:justify;
+}
+.btn-circle{
+  border-radius:50%;
+  margin:0 5px;
+}
+.card-deck .col-md-4{
+  display:flex;
+}
+.card{
+  flex:1;
+  margin-bottom:10px;
+}
+#services i.fa{
+  color:#d9534f;
+}
+.navbar-toggleable-md .navbar-collapse{
+  justify-content:flex-end;
+}
+.img-fluid{
+  transition:transform .5s;
+}
+.img-fluid:hover{
+    transform:scale(1.05);
+} 
+#social-link{
+  list-style-type:none;
+  display:flex;
+  font-size:30px;
+  justify-content:center;
+  padding:0;
+}
+#social-link>li>a{
+  padding:0 15px;
+  cursor:pointer;
+  transition: .5s color;
+  color:#d9534f;
+}
+#social-link>li:hover>a{
+  color:red;
+}
+section h1{
+  margin-bottom:40px;
+}
+section#footer>h1{
+  font-family:'Great Vibes', cursive;
+  font-size:50px;
+}
+#technology .col-sm-3{
+  max-width: 14%;
+}
+@media (max-width: 650px){
+  .parallax>p{
+    font-size: 15px;
+    padding:22px;
+    top:10px;
+  }
+  .img-about{
+    width:70%;
+  }
+}
